@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Cost Estimator and Order Wizard">
+	<meta name="author" content="UWS">
+	<title>Esty | Cost Estimator and Order Wizard</title>
+
+	<!-- Favicon -->
+	<link href="img/favicon.png" rel="shortcut icon">
+
+	<!-- Google Fonts - Poppins, Karla -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:300,400,500,600,700" rel="stylesheet">
+
+	<!-- Font Awesome CSS -->
+	<link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+
+	<!-- Custom Font Icons -->
+	<link href="vendor/icomoon/css/iconfont.min.css" rel="stylesheet">
+
+	<!-- Vendor CSS -->
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/dmenu/css/menu.css" rel="stylesheet">
+	<link href="vendor/hamburgers/css/hamburgers.min.css" rel="stylesheet">
+	<link href="vendor/mmenu/css/mmenu.min.css" rel="stylesheet">
+	<link href="vendor/range-slider/css/ion.rangeSlider.css" rel="stylesheet">
+
+	<!-- Color Panel CSS -->
+	<link href="vendor/colorpanel/css/jquery.colorpanel.css" rel="stylesheet">
+
+	<!-- Main CSS -->
+	<link href="css/style.css" id="cpswitch" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div id="preloader">
+		<div data-loader="circle-side"></div>
+	</div>
+	<!-- Preloader End -->
+
+	<!-- Page -->
+	<div id="page">
+		<!-- Header -->
+		<header class="main-header sticky">
+			<a href="#menu" class="btn-mobile">
+				<div class="hamburger hamburger--spin" id="hamburger">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+			</a>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-6">
+						<div id="logo">
+							<h1><a href="https://ultimatewebsolutions.net/esty/intro/" title="Esty">Esty</a></h1>
+						</div>
+					</div>
+					<div class="col-lg-9 col-6">
+						<ul id="menuIcons">
+							<li><a href="https://codecanyon.net/user/ultimatewebsolutions#contact" target="_blank"><i class="icon icon-support"></i></a></li>
+							<li><a href="https://codecanyon.net/cart/configure_before_adding/27661239" target="_blank"><i class="icon icon-shopping-cart2"></i></a></li>
+						</ul>
+						<!-- Menu -->
+						<nav id="menu" class="main-menu">
+							<ul>
+								<li>
+									<span><a href="#">Estimators <i class="fa fa-chevron-down"></i></a></span>
+									<ul>
+										<li><a href="order-1.html">Demo 1 - More dropdowns</a></li>
+										<li><a href="order-2.html">Demo 2 - Single items</a></li>
+										<li><a href="order-3.html">Demo 3 - Single dropdown</a></li>
+									</ul>
+								</li>
+								<li>
+									<span><a href="#">Extra Elements <i class="fa fa-chevron-down"></i></a></span>
+									<ul>
+										<li><a href="php/mailer/email.html" target="_blank">Email Response</a></li>
+										<li>
+											<span><a href="#">Summary PDF</a></span>
+											<ul>
+												<li><a href="pdf/order-usd-left.pdf" target="_blank">USD on the left</a></li>
+												<li><a href="pdf/order-usd-right.pdf" target="_blank">USD on the right</a></li>
+												<li><a href="pdf/order-eur-spec-chars.pdf" target="_blank">EUR with spec.chars.</a></li>
+											</ul>
+										</li>
+										<li>
+											<span><a href="#">Summary PDF Colors</a></span>
+											<ul>
+												<li><a href="pdf/order-usd-left.pdf" target="_blank">Green</a></li>
+												<li><a href="pdf/order-light-green.pdf" target="_blank">Light Green</a></li>
+												<li><a href="pdf/order-blue.pdf" target="_blank">Blue</a></li>
+												<li><a href="pdf/order-light-blue.pdf" target="_blank">Light Blue</a></li>
+												<li><a href="pdf/order-yellow.pdf" target="_blank">Yellow</a></li>
+												<li><a href="pdf/order-black.pdf" target="_blank">Black</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!-- Menu End -->
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+
+		<!-- Sub Header -->
+		<div class="sub-header">
+			<div class="container">
+				<h1>Estimator Demo 2</h1>
+			</div>
+		</div>
+		<!-- Sub Header End -->
+
+		<!-- Main -->
+		<main>
+			<!-- Order  -->
+			<div class="order">
+				<div class="container">
+					<!-- Form -->
+					<form method="POST" id="orderForm" name="orderForm" action="php/order_send_2.php">
+						<div class="row">
+							<div class="col-lg-8" id="mainContent">
+								<!-- Calculator Area -->
+								<div id="optionGroup1" class="row option-box">
+									<div class="option-box-header">
+										<h3>Option Single 1</h3>
+										<p>Single Option 1 Price: 1,025.64 USD</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option1Title" name="option1Title" value="Single Option 1" />
+										<input type="hidden" id="option1Price" name="option1Price" value="0" />
+										<input type="checkbox" id="option1Single" class="inp-cbx" name="option1Single" value="1025.64" />
+										<label class="cbx" for="option1Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option1SingleTitle">Single Option 1</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option1SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option1SingleQty" type="text" class="qty-input form-control" name="optionGroup1Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="optionGroup2" class="row option-box">
+									<div class="ribbon-left"><span class="left">Popular</span></div>
+									<div class="option-box-header">
+										<h3>Option Single 2</h3>
+										<p>Single Option 2 Price: 103.63 USD</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option2Title" name="option2Title" value="Single Option 2" />
+										<input type="hidden" id="option2Price" name="option2Price" value="0" />
+										<input type="checkbox" id="option2Single" class="inp-cbx" name="option2Single" value="103.63" />
+										<label class="cbx" for="option2Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option2SingleTitle">Single Option 2</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option2SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option2SingleQty" type="text" class="qty-input form-control" name="optionGroup2Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="optionGroup3" class="row option-box">
+									<div class="option-box-header">
+										<h3>Option Single 3</h3>
+										<p>Single Option 3 Price: 10.75 USD</p>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<input type="hidden" id="option3Title" name="option3Title" value="Single Option 3" />
+										<input type="hidden" id="option3Price" name="option3Price" value="0" />
+										<input type="checkbox" id="option3Single" class="inp-cbx" name="option3Single" value="10.75" />
+										<label class="cbx" for="option3Single">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="option3SingleTitle">Single Option 3</span>
+										</label>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row">
+											<div class="col-8">
+												<input id="option3SingleRangeSlider" type="text" value="" />
+											</div>
+											<div class="col-4">
+												<input id="option3SingleQty" type="text" class="qty-input form-control" name="optionGroup3Qty" value="0" />
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="extraOptionGroup1" class="row option-box">
+									<div class="option-box-header">
+										<h3>Extra Option 1</h3>
+										<p>Subtitle or short description can be set here.</p>
+									</div>
+									<div class="col-md-12 col-sm-12">
+										<input type="hidden" name="extraOption1Title" value="Extra Option 1" />
+										<input type="checkbox" id="extraOption1" class="inp-cbx" name="extraOption1" value="50.00" />
+										<label class="cbx" for="extraOption1">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="extraOption1Title">Extra Option 1</span>
+										</label>
+									</div>
+								</div>
+								<div id="extraOptionGroup2" class="row option-box">
+									<div class="option-box-header">
+										<h3>Extra Option 2</h3>
+										<p>Subtitle or short description can be set here.</p>
+									</div>
+									<div class="col-md-12 col-sm-12">
+										<input type="hidden" name="extraOption2Title" value="Extra Option 2" />
+										<input type="checkbox" id="extraOption2" class="inp-cbx" name="extraOption2" value="70.00" />
+										<label class="cbx" for="extraOption2">
+											<span>
+												<svg width="12px" height="10px" viewbox="0 0 12 10">
+													<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+												</svg>
+											</span>
+											<span id="extraOption2Title">Extra Option 2</span>
+										</label>
+									</div>
+								</div>
+								<!-- Calculator Area End -->
+								<!-- Personal Details Start -->
+								<div id="personalDetails">
+									<div class="row">
+										<div class="order-box-header">
+											<h3>Order Form</h3>
+											<p>Subtitle or short description can be set here. <a href="javascript:;" id="autofill" class="underline-link">Autofill</a></p>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Name</label>
+												<input id="username" class="form-control" name="username" placeholder="Enter Full Name" type="text" data-parsley-pattern="^[a-zA-Z\s.]+$" required />
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Email</label>
+												<input id="email" class="form-control" name="email" placeholder="Enter VALID EMAIL and check the result" type="email" required />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Phone</label>
+												<input id="phone" class="form-control" name="phone" placeholder="Enter Phone e.g.: +363012345" type="text" data-parsley-pattern="^\+{1}[0-9]+$" />
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Address</label>
+												<input id="address" class="form-control" name="address" placeholder="Enter Address" type="text" data-parsley-pattern="^[a-zA-Z0-9\s.]+$" required />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>City</label>
+												<input id="city" class="form-control" name="city" placeholder="Enter City" type="text" pattern="^[a-zA-Z\s]+$" required />
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>State</label>
+												<input id="state" class="form-control" name="state" placeholder="Enter State" type="text" data-parsley-pattern="^[a-zA-Z\s]+$" required />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Zip Code</label>
+												<input id="zipcode" class="form-control" name="zipcode" placeholder="Enter Zip Code" type="text" data-parsley-type="digits" required />
+											</div>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<div class="form-group">
+												<label>Country</label>
+												<input id="autocomplete" class="form-control" name="country" placeholder="Start Typing Country" type="text" required
+													data-parsley-pattern="^[a-zA-Z\s]+$" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<label>Message</label>
+												<textarea id="inputMessage" class="form-control" name="message" placeholder="Enter Message" data-parsley-pattern="^[a-zA-Z0-9\s.:,!?']+$"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Personal Details End -->
+							</div>
+							<div class="col-lg-4" id="sidebar">
+								<!-- Order Container -->
+								<div id="orderContainer" class="theiaStickySidebar">
+									<div class="row">
+										<div class="col-md-12">
+											<input type="hidden" id="subSum1" name="subSum1" value="0" />
+											<input type="hidden" id="subSum2" name="subSum2" value="0" />
+											<input type="hidden" id="subSum3" name="subSum3" value="0" />
+											<input type="hidden" id="totalDue" name="totalDue" value="0" />
+											<h3>Order Summary</h3>
+											<ul id="orderSumList">
+												<li id="option1SingleSum"></li>
+												<li id="option2SingleSum"></li>
+												<li id="option3SingleSum"></li>
+												<li id="extraOption1Sum"></li>
+												<li id="extraOption2Sum"></li>
+											</ul>
+											<div class="row total-container">
+												<div class="col-6 p-0">
+													<input type="text" id="totalTitle" class="summaryInput" name="totallabel" value="" disabled />
+												</div>
+												<div class="col-6 p-0">
+													<input type="text" id="total" class="summaryInput" name="total" value="0" data-parsley-errors-container="#totalError" data-parsley-empty-order=""
+														disabled />
+												</div>
+											</div>
+											<div id="totalError"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="checkbox" id="cbx" class="inp-cbx" name="terms" value="yes" required />
+												<label class="cbx terms" for="cbx">
+													<span>
+														<svg width="12px" height="10px" viewbox="0 0 12 10">
+															<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+														</svg>
+													</span>
+													<span>Accept<a href="pdf/terms.pdf" class="terms-link" target="_blank">Terms</a>.</span>
+												</label>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button type="submit" name="submit" class="btn-form-func">
+												<span class="btn-form-func-content">SUBMIT</span>
+												<span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+											</button>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-12">
+											<button type="button" name="reset" id="resetBtn" class="btn-form-func btn-form-func-alt-color">
+												<span class="btn-form-func-content">RESET</span>
+												<span class="icon"><i class="fa fa-times" aria-hidden="true"></i></span>
+											</button>
+										</div>
+									</div>
+									<div class="row footer">
+										<div class="col-lg-12 text-center">
+											<small>&copy; 2020 Your Company.</small>
+										</div>
+									</div>
+								</div>
+								<!-- Order Container End -->
+							</div>
+						</div>
+					</form>
+					<!-- Form End -->
+				</div>
+			</div>
+			<!-- Order End -->
+		</main>
+		<!-- Main End -->
+
+		<!-- Footer -->
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<ul id="subFooterLinks">
+							<li><a href="https://codecanyon.net/user/ultimatewebsolutions" target="_blank">With <i class="fa fa-heart pulse"></i> by UWS</a></li>
+							<li><a href="https://codecanyon.net/user/ultimatewebsolutions#contact" target="_blank">Need Help?</a></li>
+							<li><a href="https://codecanyon.net/cart/configure_before_adding/27661239" target="_blank">Purchase Esty</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<div id="copy">© 2020 Esty</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer End -->
+	</div>
+	<!-- Page End -->
+
+	<!-- Back to top button -->
+	<div id="toTop"><i class="fa fa-chevron-up"></i></div>
+
+	<!-- Color Panel -->
+	<div id="colorPanel" class="colorPanel">
+		<a id="cpToggle" href="#"><i class="fa fa-cog"></i></a>
+		<ul></ul>
+	</div>
+
+	<!-- Vendor Javascript Files -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/easing/js/easing.min.js"></script>
+	<script src="vendor/parsley/js/parsley.min.js"></script>
+	<script src="vendor/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendor/range-slider/js/ion.rangeSlider.min.js"></script>
+	<script src="vendor/price-format/js/jquery.priceformat.min.js"></script>
+	<script src="vendor/theia-sticky-sidebar/js/ResizeSensor.min.js"></script>
+	<script src="vendor/theia-sticky-sidebar/js/theia-sticky-sidebar.min.js"></script>
+	<script src="vendor/mmenu/js/mmenu.min.js"></script>
+	<script src="vendor/autocomplete/js/autocomplete.min.js"></script>
+	<script src="vendor/autocomplete/js/countries.js"></script>
+
+	<!-- Color Panel -->
+	<script src="vendor/colorpanel/js/jquery.colorpanel.js"></script>
+
+	<!-- Main Javascript File -->
+	<script src="js/scripts-2.js"></script>
+
+</body>
+
+</html>
